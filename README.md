@@ -1,7 +1,9 @@
 # Bully algorithm impementation
 
 ## Description
-Bully algorithm CLI programm for Task3 (exercise 6) of Distributed Systems.
+Bully algorithm CLI programm for Task3 (exercise 6) of Distributed Systems. 
+
+This project requires Linux OS system for running.
 
 ## Program run
 `
