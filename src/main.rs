@@ -21,7 +21,7 @@ fn run_cli() {
     let content = std::fs::read_to_string(&path).expect("could not read file");
     let mut storage = Storage::new();
     read_processes(content, &mut storage);
-    let mut coordinator_id = bully_election(&mut storage);
+    let mut coordinator_id = bully_election(&mut storage, true);
 
     loop {
         let mut input_command = String::new();
@@ -35,7 +35,7 @@ fn run_cli() {
                     "reload" => {
                         let content = std::fs::read_to_string(&path).expect("could not read file");
                         read_processes(content, &mut storage);
-                        coordinator_id = bully_election(&mut storage);
+                        coordinator_id = bully_election(&mut storage, true);
                     }
                     "list" => {
                         let print = pretty_print_storage(&storage, coordinator_id);
