@@ -7,7 +7,7 @@ use bully::common::models::Storage;
 use criterion::*;
 
 pub fn criterion_benchmark(c: &mut Criterion) {
-    for i in 10..11 {
+    for i in 1..11 {
         let fname = format!("test_data/test_data_{}.txt", i);
         let content = std::fs::read_to_string(fname).expect("could not read file");
         let mut storage = Storage::new();
