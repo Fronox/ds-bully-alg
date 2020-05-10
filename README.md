@@ -1,4 +1,4 @@
-# ds-bully-alg
+# Bully algorithm impementation
 
 ## Description
 Bully algorithm CLI programm for Task3 (exercise 6) of Distributed Systems.
