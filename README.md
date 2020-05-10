@@ -1,5 +1,8 @@
 # ds-bully-alg
 
+## Description
+Bully algorithm CLI programm for Task3 (exercise 6) of Distributed Systems.
+
 ## Program run
 `
 target/release/bully_alg -- <path to process file> 
